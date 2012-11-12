@@ -187,7 +187,7 @@ public class EncompassRegionBuilder extends RegionBuilder {
 								return;
 							}
 						}
-						p.sendMessage(AQUA + "Your area used: " + (totalArea+region.getArea()) + ", left: " + GOLD + (areaUnlimited ? "unlimited" : pLimit-(totalArea + region.getArea())) + AQUA + ".");
+						p.sendMessage(AQUA + "Your area used: " + GOLD + (totalArea+region.getArea()) + AQUA + ", left: " + GOLD + (areaUnlimited ? "unlimited" : pLimit-(totalArea + region.getArea())) + AQUA + ".");
 						if (RedProtect.removeBlocks){
 							b.breakNaturally();
 							for(Block rb : redstone) {
